@@ -14,18 +14,18 @@
     <body>
         <h1>Arithmetic Calculator</h1>
         <form action="arithmetic" method="post">
-            <label for="arithmetic">First: </label>
-            <input type="number" name="Farithmetic" id="Farithmetic">
+            <label for="fArithmetic">First: </label>
+            <input type="number" name="fArithmetic" id="fArithmetic" value="${fArithmetic}" >
             <br>
-            <label for="arithmetic">Second: </label>
-            <input type="number" name="Sarithmetic" id="Sarithmetic">
+            <label for="sArithmetic">Second: </label>
+            <input type="number" name="sArithmetic" id="sArithmetic" value="${sArithmetic}">
             <br>
-            <button type="submit"><strong>+</strong></button>
-            <button type="submit"><strong>-</strong></button>
-            <button type="submit"><strong>*</strong></button>
-            <button type="submit"><strong>%</strong></button>
+            <button type="submit" name="calculation" value="add" id="addition"><strong>+</strong></button>
+            <button type="submit" name="calculation" value="sub" id="subtraction"><strong>-</strong></button>
+            <button type="submit" name="calculation" value="mul" id="multiplication"><strong>*</strong></button>
+            <button type="submit" name="calculation" value="mod" id="division"><strong>/</strong></button>
         </form>
-        
-        <a href="AgeCalculatorServlet?">Age Calculator </a>
+        <p>${output}</p>
+        <a href="age">Age Calculator </a>
     </body>
 </html>

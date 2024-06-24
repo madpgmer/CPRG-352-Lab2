@@ -1,2 +1,2 @@
-# CPRG-352-Lab2
+# SAIT Lab submission
  
